@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- the MAIN.CSS file is linked here -->
+  </head>
+  
+  <body>
+    <h1>The Guessing Game</h1>
+
+
+    <div class='chance'>
+      5 chances : <span id="remaining_guesses">5 more</span>
+    </div>
+
+    <div class="guesses" id="guesses_list">
+      <span class="guess">50</span>
+      <span class="guess">25</span>
+    </div>
+    
+
+    <form onsubmit="return false;">
+      <div>
+          <input type="text" id="guess" autocomplete="off"></input>
+          <button id="play">Play here</button>
+      </div>
+    </form>
+
+    
+
+    <div class="actions">
+      <button id="reset">Reset</button>
+      <span id="message"></span>
+      <button id="hint">Hint</button>
+    </div>
+
+
+    <div class="footer">
+      <img src="data:image/png;base64,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">
+      <a href = "https://github.com/SihemMrk/">@SihemMrk</a>
+      <img src="https://mms.businesswire.com/media/20151015005860/en/491348/5/Grace_Hopper_Logo_2.jpg">
+    </div>
+
+    <script src='js/guessing-game.js'></script>
+    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+  </body>
+
+</html>

@@ -1,0 +1,147 @@
+/* Write your CSS code in this file */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    font-weight:normal;
+    /*border:solid 1px #000;*/
+}
+html{
+    width : 100%;
+    background : white;
+    padding-top: 50px;
+}
+body{
+  background-color: #ebebe3;
+  color: #2b2b28;
+  width : 1000px;
+  margin: 0 auto;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+
+ }
+
+
+h1 {
+    position : relative;
+    text-align : center;
+    margin-top : 0px;
+    font-size : 60px;
+
+}
+
+.guesses{
+    text-align : center;
+    margin-top : 20px;
+    font-size : 30px; 
+    color : rgb(118, 113, 113);
+
+}
+
+.guess{
+    display : inline-block;
+    margin: 0 5px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+
+.chance{
+    margin-top : 18px;
+    font-size : 30px;
+    text-align : center;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+#remaining_guesses{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+#reset{
+    font-size : 20px;
+    color : white;
+    background : red;
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#hint{
+    font-size : 20px;
+    background : #90EE90;
+    color: white;
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#message{
+    font-size : 30px;
+    color :#ac9e9e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form{
+    margin-top:30px;
+    text-align : center;
+}
+
+form div{
+    margin:0 auto;
+    width:200px;
+    height:230px;
+    position:relative;
+}
+
+#guess{
+    background-color : white;
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    text-align: center;
+    font-size : 60px;
+    color : #ac9e9e;
+    outline:none;
+    border:none;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+#play{
+    position:absolute;
+    bottom:60px;
+    left:50%;
+    margin-left:-61px;
+    font-size : 30px;
+    border:none;
+    background:none;
+    color :rgb(118, 113, 113)
+}
+
+.actions{
+    margin-bottom: 20px; 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.actions button{
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding:5px 10px;
+    border:none;
+}
+
+.footer{
+    display : flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.footer img{
+    height:50px;
+   
+    
+}
+
+.footer a{
+    background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png) no-repeat left center;
+    background-size:32px 32px;
+    padding-left:35px;
+    padding-top:18px;
+    color : rgb(118, 113, 113);
+    text-decoration : none;
+}
